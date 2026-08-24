@@ -1,5 +1,7 @@
 # USAGE.md — SM120 Expert Kernel Library
 
+> **Dependencies note:** release archives don't carry submodule contents — clone CUTLASS (see `.gitmodules`) into `3rd-party/cutlass` before building.
+
 ## What This Is
 
 CUDA kernel library for MoE (Mixture of Experts) inference on SM120 GPUs (RTX 5090/5080). Provides the complete expert forward pipeline: grouped GEMM with NVFP4/FP8 quantized weights, SwiGLU activation, and expert routing permute/unpermute.
